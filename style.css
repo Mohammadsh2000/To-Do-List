@@ -1,0 +1,163 @@
+*{}
+body{background-color: #662fe7;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    width: 500px;
+    min-height: 600px;
+    height: auto;
+    margin: 30px auto;
+    padding: 5px;
+    border-radius: 10px ;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.3) ;
+    padding: 0px 0px;
+}
+.header{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    height: 140px;
+    background: linear-gradient(120deg, #4b6cb7, #182848);
+    border-radius: 10px 10px 0 0;
+ 
+}
+.input-tasks{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    background-color:#f8f9ff;
+    border-bottom:1px solid rgb(235, 234, 234);
+}
+.input-tasks input{
+    padding: 0px 20px;
+    border-radius: 30px;
+}
+.input-tasks .btn{
+    height: 52px;
+    width: 100px;
+    font-size: 20px;
+    background: linear-gradient(120deg, #4b6cb7, #182848);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.input-tasks .btn:hover{
+transform: translateY(-5px)
+}
+.input-tasks .text{
+   height: 50px;
+   width: 280px;
+   font-size: 19px;
+   font-weight:100;
+   text-align: right;
+   border:2px solid #c1cae7;
+  
+}
+.container-tasks{
+width: 100%;
+}
+.header-tasks{
+    height: 60px;
+    border-bottom: 1px solid rgb(235, 234, 234);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-tasks input{
+    width: 90px;
+    height: 30px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0px 30px;
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    background-color: #acacac;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.header-tasks input.active-clear{
+    background-color: #ce1616;
+}
+.header-tasks input.active-clear:hover {
+    transform: translateY(-2px) ;
+    background-color: #911010;
+}
+.header-tasks span{
+    margin: 0px 30px;
+    font-size: 20px;
+    color: #58698d;
+    font-weight:500;
+}
+.header-tasks span span{
+    margin:0px 0px
+}
+.main-tasks{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* غيرها من center لـ flex-start لتبدأ المهام من الأعلى */
+    align-items: center;
+    min-height: 250px;
+    height: auto;
+}
+.plus{
+    font-size: 70px;
+    color: #6f84b8;
+}
+.nothing{
+    font-size: px;
+    color: #6f84b8;
+}
+ul{
+    padding: 0;
+    width: 90%;
+    list-style-type: none;
+
+}
+li{
+    height: 60px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border:1px solid rgb(173, 173, 173);
+    border-radius: 10px;
+    transition: transform 0.6s ease;
+}
+li:hover{
+    transform: translateX(5px);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.144);
+}
+li > input{
+    height: 35px;
+    width: 35px;
+    color: white;
+    background-color: #ce1616;
+    border: none;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+li > input:hover{
+    transform: translateY(-2px) ;
+    background-color: #911010;
+}
+
+li div{
+    display: flex; 
+    align-items: center; 
+
+}
+li div input{
+    width: 20px;
+    height: 20px;
+}

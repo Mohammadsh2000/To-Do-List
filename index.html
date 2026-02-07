@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header"> قائمة المهام📝</div>
+        <div class="input-tasks">
+            <input type="button" onclick="add_task()" class="btn" id="add" value="اضافة">
+            <input type="text" name="" class="text" id="taskName" placeholder="أضف مهمة جديدة">
+        </div>
+        <div class="container-tasks">
+            <div class="header-tasks">
+                <input type="button" id="clear_all" onclick="clearAll()" value="مسح الكل">
+                <span>المهام: <span id="taskCount">0</span></span>
+            </div>
+            <div class="main-tasks" id="main_tasks">
+                <div class="plus">+</div>
+                <div class="nothing">لا توجد مهام حاليا</div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
